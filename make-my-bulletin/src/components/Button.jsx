@@ -12,6 +12,24 @@ export default function Button({professional, affinity, wellbeing, social}) {
                 <button>
                     {professional}
                 </button>
+        );
+    } else if (affinity !== undefined) {
+        return (
+            <button>
+                {affinity}
+            </button>
+        );
+    } else if (wellbeing !== undefined) {
+        return(
+            <button>
+                {wellbeing}
+            </button>
+        );
+    } else if (social !== undefined) {
+        return (
+            <button>
+                {social}
+            </button>
         )
     }
 }
